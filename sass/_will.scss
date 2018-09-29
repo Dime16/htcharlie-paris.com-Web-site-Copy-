@@ -1,0 +1,35 @@
+.will {
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+        flex: 0 0 30%;
+        margin-right: 5rem;
+
+        &-header {
+            font-size: 2.4rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-bottom: 3rem;
+        }
+
+        &-paragraph {
+            font-size: 1.5rem;
+            text-align: center;
+            color: $color-grey-light-3;
+            line-height: 1.7;
+        }
+    }
+
+    &__right {
+        flex: 0 0 25%;
+        padding-left: 5rem;
+
+        &-img {
+
+        }
+    }
+}

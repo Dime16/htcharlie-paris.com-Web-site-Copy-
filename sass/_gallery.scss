@@ -1,0 +1,111 @@
+.gallery {
+    padding-top: 10rem;
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-big {
+            color: $color-blue-1;
+            font-size: 2rem;
+        }
+
+        &-small {
+            color: $color-blue-2;
+            padding: 3rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+
+            &-red {
+                color: $color-red-2;
+                font-size: 1.6rem;
+                padding-bottom: 4rem;
+            }
+
+        }
+    }
+
+    &__bottom {
+        display: flex;
+
+        &__box {
+            flex: 0 0 16.6%;
+
+
+            &__product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                &__top {
+                    position: relative;
+
+                    &-img {
+                        width: 100%;
+                    }
+
+                    &-banner {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: $color-grey-light-1;
+                        background-color: $color-blue-1;
+                        padding: 1rem 1.2rem;
+                        font-size: 1.6rem;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                &__bottom {
+                    text-align: center;
+                    text-decoration: none;
+                    color: $color-blue-1;
+                    padding: 2rem 0;
+                    
+
+                    &-title {
+                        font-size: 1.7rem;
+                        text-decoration: none;
+                        list-style: none;
+                        font-weight: 400;
+                    }
+
+                    &-text {
+                        text-decoration: none;
+                        font-family: 'Roboto Slab', serif;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            &__color {
+                display: flex;
+                justify-content: center;
+
+                // :not(:last-child) {
+                //     margin-right: 1rem;
+                // }
+
+                &-link {
+                    padding: .5rem;
+                }
+
+                &-img {
+                    width: 1.5rem;
+                    border-radius: 50%;
+
+
+                }
+            }
+
+        }
+
+        &__link {
+            text-decoration: none;
+        }
+    }
+}

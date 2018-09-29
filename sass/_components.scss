@@ -1,0 +1,21 @@
+.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: $color-grey-light-1;
+    height: 8rem;
+    
+}
+
+.active2 {
+    z-index: 100;
+    display: block;
+}
+
+.active3{
+    // position: fixed;
+    width: 100%;
+    // top: 0;
+    background-color: $color-grey-light-1;
+    height: 8rem;
+}

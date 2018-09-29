@@ -1,0 +1,65 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #F6F6F6;
+$color-grey-light-2: #DFDFDF;
+$color-grey-light-3:#8A8A8A;
+$color-grey-light-4: #95A5BF;
+
+$color-grey-dark-1: #373C42;
+$color-grey-dark-2: #333333;
+
+
+$color-red-1: #EB0038;
+$color-red-2:#CC0000;
+$color-blue-1: #193960;
+$color-blue-2:#18395F;
+
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10/16 px = 62.5% --> 1 rem = 10px
+    
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    // font-family: 'Libre Baskerville', serif;
+    // font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $color-grey-dark-1;
+    font-weight: 400;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.wrapper-1 {
+    margin-left: auto;
+    margin-right: auto;
+    // width: 100%;
+}

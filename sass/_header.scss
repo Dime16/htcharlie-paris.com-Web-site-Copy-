@@ -1,0 +1,173 @@
+.header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    &__container {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:$color-grey-light-1;
+        transition: all .4s;
+        visibility: hidden;
+        
+
+        &-header {
+            font-family: 'Roboto Slab', serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 4.5rem;
+            font-weight: 700;
+            padding-bottom: 2.5rem;
+        }
+
+        &-text {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            padding-bottom: 2.5rem;
+        }
+
+        &__box {
+            
+            &-btn {
+                background: transparent;
+                color:$color-grey-light-1;
+                text-transform: uppercase;
+                border: 1px solid $color-grey-light-1;
+                transition: all .3s;
+                padding: 1.5rem 2rem;
+
+                &:hover {
+                    color: $color-grey-dark-2;
+                    background-color: $color-grey-light-1;
+                    border: 1px solid $color-grey-dark-2;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+
+    &-box {
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        height: 74vh;
+        
+    }
+
+    &__menu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        color: $color-blue-2;
+        
+        // z-index: 100;
+        
+        
+        &__list {
+            display: flex;
+            list-style: none;
+            padding: 2.5rem 2rem;
+            flex: 1 0 33%;
+
+            &-right {
+                flex: 1 0 33%;
+                display: flex;  
+                justify-content: flex-end;
+                
+                &:last-child {
+                    padding-right: 3rem;
+                }
+            }
+
+            &-icon {
+                fill: $color-blue-2;
+                width: 3rem;
+                height: 3rem;
+                opacity: .8;
+            }
+
+            &-item {
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding: .5rem;
+                letter-spacing: .5px;
+                position: relative;
+            }
+
+            &__hidden {
+                
+            }
+        }
+
+        
+        &__img {
+            // flex: 1;
+            display: flex;
+            justify-content: center;
+            flex: 0 0 30%;
+
+            &-logo {
+                width: 10rem;
+                height: 9rem;
+            }
+        }
+    }
+
+    &__box {
+        position: relative;
+        &__img {
+            height: 87vh;
+
+            &-1 {
+                background-image: url(/img/car1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-2 {
+                background-image: url(/img/car2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-3 {
+                background-image: url(/img/car3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        &-link {
+            text-decoration: none;
+            text-transform: uppercase; 
+            text-align: center;
+            padding: 2rem;
+            font-size: 2rem;
+            color: inherit;
+            border-bottom: 1px solid $color-blue-2;    
+            width: 60%;
+        }
+    }
+}

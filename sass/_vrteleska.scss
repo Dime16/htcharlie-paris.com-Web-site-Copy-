@@ -1,0 +1,98 @@
+.product {
+
+
+    &__box {
+        padding: 4rem 0;
+
+        &__img {
+            // height: 60vh;
+
+            &__color {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                padding-top: 1.5rem;
+
+                &-item {
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+
+                &-link {
+                }
+
+                &-pic {
+                    width: 1rem;
+                    border-radius: 50%;
+                }
+            }
+
+            &__visible {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-btn {
+                    font-family: inherit;
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: transparent;
+                    color: $color-blue-2;
+                    text-transform: uppercase;
+                    border: 1px solid $color-blue-2;
+                    transition: all .3s;
+                    padding: 1.5rem 2rem;
+                    visibility: hidden;
+                    transition: all .4s;
+    
+                    &:hover {
+                        color: $color-grey-light-1;
+                        background-color: $color-blue-2;
+                        border: 1px solid $color-blue-2;
+                        top: 50%;
+                    }
+                }
+
+                &-pic {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+
+                &-link {
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: inherit;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                }
+
+                &-price {
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 1.3rem;
+                }
+            }
+
+            &__color {
+
+
+                &__link {
+
+                }
+            }
+        }
+    }
+}

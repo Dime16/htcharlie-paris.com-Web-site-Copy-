@@ -1,0 +1,45 @@
+.video {
+    height: 90vh;
+    background-image: url("/img/Capture-video_1900x.progressive.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &__text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+        transform: translateY(3rem);
+        text-shadow: 1px 1px 2px $color-grey-light-3;
+
+        &-pretext {
+            font-size: 1.8rem;
+        }
+
+        &-headline {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            padding: 3rem;
+        }
+
+        &-link {
+            border: 1px solid $color-grey-light-1;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            letter-spacing: 1px;
+            font-weight: 300;
+            transition: all .3s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-grey-light-1;
+                color: $color-grey-dark-1;
+            }
+        }
+    }
+}

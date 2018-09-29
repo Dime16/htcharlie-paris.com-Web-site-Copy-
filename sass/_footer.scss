@@ -1,0 +1,98 @@
+.footer {
+    background-color: $color-blue-1;
+    color: $color-grey-light-1;
+    padding: 5rem;
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__1 {
+        flex: 0 0 12%;
+
+        &-logo {
+            height: 80%;
+        }
+
+        &__box {
+            
+            &-icon {
+                width: 2rem;
+                fill: $color-grey-light-1;
+                margin-right: 1.2rem;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                    fill: $color-grey-light-4;
+                }
+            }
+        }
+    }
+
+    &__2 {
+        flex: 0 0 12%;
+        
+
+        &-header {
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        &__list {
+            list-style: none;
+            
+
+            &-item {
+                padding-bottom: 2rem;
+                font-size: 1.3rem;
+                font-family: 'Libre Baskerville', serif;
+                transition: .3s;
+
+                
+                &:hover {
+                    cursor: pointer;
+                    color: $color-grey-light-4;
+                }
+            }
+
+        }
+
+        &-text {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__3 {
+        flex: 0 0 12%;
+    }
+}
+.f32 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.credits {
+    font-size: 1.4rem;
+    flex: 0 0 60%;
+    // justify-self: flex-start;
+    // text-align: left;
+
+    &-link {
+        text-decoration: none;
+        color: inherit;
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-grey-light-4;
+            
+        }
+    }
+}
