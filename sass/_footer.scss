@@ -8,13 +8,22 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__1 {
         flex: 0 0 12%;
+            
+    @media only screen and (max-width: $bp-large) {
+        flex: 0 0 20%;
+    }
 
         &-logo {
-            height: 80%;
+            // height: 80%;
         }
 
         &__box {
@@ -35,6 +44,10 @@
 
     &__2 {
         flex: 0 0 12%;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 60%;
+        }
         
 
         &-header {
@@ -46,6 +59,14 @@
 
         &__list {
             list-style: none;
+
+            @media only screen and (max-width: $bp-medium) {
+                min-height: 0;
+                max-height: 0;
+                opacity: 0;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
             
 
             &-item {
@@ -53,6 +74,16 @@
                 font-size: 1.3rem;
                 font-family: 'Libre Baskerville', serif;
                 transition: .3s;
+
+                @media only screen and (max-width: $bp-medium) {
+                    min-height: 0;
+                    max-height: 0;
+                    opacity: 0;
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                }
+
+    
 
                 
                 &:hover {
@@ -81,8 +112,6 @@
 .credits {
     font-size: 1.4rem;
     flex: 0 0 60%;
-    // justify-self: flex-start;
-    // text-align: left;
 
     &-link {
         text-decoration: none;

@@ -1,0 +1,163 @@
+.popup {
+
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    
+
+    &__close-button {
+        margin-right: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2rem;
+        height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        color: $color-grey-light-5;
+        font-size: 3rem;
+        transition: all .3s;
+
+    
+        &:hover {
+            color: $color-grey-dark-1;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-grey-light-1;
+        padding: 1rem 1.5rem;
+        width: 52%;
+        border-radius: 0.5rem;
+        display: flex;
+
+        &__left {
+            flex: 0 0 50%;
+            padding: 3rem;
+            overflow: hidden;
+            transition: all 1s;
+
+            &-img {
+                width: 100%;
+                height: 100%;
+                padding: 2rem;
+                transition: all 1s;
+
+                &:hover {
+                    transform: scale(2);
+                    overflow: hidden;
+                }
+            }
+        }
+
+        &__right {
+            color: $color-blue-1;
+            padding: 2rem;
+            flex: 0 0 40%;
+
+            &-title {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                color: inherit;
+                font-weight: 400;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px solid $color-blue-1;
+            }
+
+            &-link {
+                color: $color-blue-1;
+            }
+
+            &-money {
+                padding: 2rem 0;
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 400;
+                font-size: 1.8rem;
+            }
+
+            &-text {
+                font-family: 'Libre Baskerville', serif;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px solid $color-blue-1;
+            }
+
+            &-center {
+                text-align: center;
+                padding: 1.5rem 0;
+                font-size: 1.7rem;
+                cursor: pointer;
+                border-bottom: 1px solid $color-blue-1;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            &__box {
+                
+                &-header {
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    padding-top: 3rem;
+                    font-family: 'Libre Baskerville', serif;
+                }
+
+                &__colors {
+                    padding: 1.5rem 0;
+                    list-style: none;
+                    display: flex;
+
+                    &-img {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        padding: .5rem;
+                        border-radius: 50%;
+                        border: 1px solid $color-grey-light-2;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        
+                        &:not(:last-child) {
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+
+                &-btn {
+                    width: 100%;
+                    padding: 1.5rem 0;
+                    border: none;
+                    background-color: $color-blue-1;
+                    text-transform: uppercase;
+                    color: $color-grey-light-1;
+                    font-family: inherit;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1000;
+}

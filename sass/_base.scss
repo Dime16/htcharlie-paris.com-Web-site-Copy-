@@ -8,6 +8,7 @@ $color-grey-light-1: #F6F6F6;
 $color-grey-light-2: #DFDFDF;
 $color-grey-light-3:#8A8A8A;
 $color-grey-light-4: #95A5BF;
+$color-grey-light-5: #95979C;
 
 $color-grey-dark-1: #373C42;
 $color-grey-dark-2: #333333;
@@ -17,6 +18,8 @@ $color-red-1: #EB0038;
 $color-red-2:#CC0000;
 $color-blue-1: #193960;
 $color-blue-2:#18395F;
+
+$color-blue-light-1: #59708C;
 
 
 // RESPONSIVE BREAKPOINTS
@@ -52,6 +55,17 @@ body {
     font-weight: 400;
 }
 
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags} {
+//   color: $color-blue-2;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+//   color: $color-blue-2;
+}
+
 .wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -62,4 +76,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     // width: 100%;
+}
+
+.wrapper-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }

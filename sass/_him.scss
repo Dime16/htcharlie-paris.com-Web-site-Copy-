@@ -1,0 +1,80 @@
+.him {
+display: flex;
+border-top: 1px solid $color-blue-1;
+align-items: flex-start;
+
+&__box {
+    display: flex;
+}
+
+    &__left {
+        flex: 0 0 25%;
+        border-right: 1px solid $color-blue-1;
+        margin-top: 3rem;
+        height: 100%;
+        padding-bottom: 4rem;
+        
+
+        &-header {
+            color: $color-blue-1;
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 4rem;
+        }
+
+        &__list {
+            list-style: none;
+
+            &-item {
+                color: $color-blue-light-1;
+                font-size: 1.1rem;
+                font-family: 'Libre Baskerville', serif;
+                padding-bottom: 2rem;
+            }
+
+            &-link {
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 75%;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 2rem;
+        padding: 2rem;
+
+        &__case {
+
+        }
+
+        &-big {
+            color: $color-blue-1;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding-bottom: 3rem;
+        }
+
+        &-small {
+            color: $color-blue-1;
+            padding-bottom: 4rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+
+        &__box {
+            flex: 0 0 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+}

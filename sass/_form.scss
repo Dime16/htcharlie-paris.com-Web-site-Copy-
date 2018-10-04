@@ -22,10 +22,21 @@
     &__contact {
         padding-bottom: 2.75rem;
 
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
         &-input {
             padding: 1.5rem;
             border: none;
             width: 35rem;
+            
+            @media only screen and (max-width: $bp-large) {
+                
+                width: 100%;
+            }
         }
 
         &-button {

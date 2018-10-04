@@ -1,17 +1,20 @@
 .product {
-
+margin-top: 3rem;
 
     &__box {
         padding: 4rem 0;
+        
 
         &__img {
-            // height: 60vh;
+            flex: 0 0 25%;
+            
 
             &__color {
                 list-style: none;
                 display: flex;
                 justify-content: center;
                 padding-top: 1.5rem;
+                flex-wrap: wrap;
 
                 &-item {
 
@@ -21,19 +24,20 @@
                 }
 
                 &-link {
+                    color: $color-blue-2;
+
                 }
 
                 &-pic {
-                    width: 1rem;
+                
+                    width: 1.5rem;
                     border-radius: 50%;
+                    height: 1.5rem;;
                 }
             }
 
             &__visible {
                 position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
 
                 &-btn {
                     font-family: inherit;
@@ -49,6 +53,7 @@
                     padding: 1.5rem 2rem;
                     visibility: hidden;
                     transition: all .4s;
+                    white-space: nowrap;
     
                     &:hover {
                         color: $color-grey-light-1;
@@ -60,6 +65,8 @@
 
                 &-pic {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -77,12 +84,14 @@
                     color: inherit;
                     padding-top: 2rem;
                     padding-bottom: 1rem;
+                    color: $color-blue-2;
                 }
 
                 &-price {
                     text-decoration: none;
                     color: inherit;
                     font-size: 1.3rem;
+                    color: $color-blue-2;
                 }
             }
 

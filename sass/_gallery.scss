@@ -1,5 +1,9 @@
 .gallery {
-    padding-top: 10rem;
+    padding: 10rem 0;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5rem 0;
+    }
+
     &__top {
         display: flex;
         flex-direction: column;
@@ -29,8 +33,22 @@
     &__bottom {
         display: flex;
 
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         &__box {
             flex: 0 0 16.6%;
+
+            @media only screen and (max-width: $bp-medium) {
+               margin-bottom: 3rem;
+               margin-left: auto;
+                margin-right: auto;
+            }
+    
 
 
             &__product {
@@ -56,6 +74,14 @@
                         padding: 1rem 1.2rem;
                         font-size: 1.6rem;
                         letter-spacing: 1px;
+
+                        @media only screen and (max-width: $bp-medium) {
+                            position: relative;
+                            text-align: center;
+                            width: 50%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
                     }
                 }
 
