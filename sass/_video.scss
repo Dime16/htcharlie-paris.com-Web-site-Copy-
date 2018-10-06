@@ -8,6 +8,11 @@
         height: 50vh;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        height: 40vh;
+        width: 90%;
+    }
+
     &__text {
         height: 100%;
         display: flex;

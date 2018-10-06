@@ -9,9 +9,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color:$color-grey-light-1;
+        color: $color-grey-light-1;
         transition: all .4s;
         visibility: hidden;
+
         
 
         &-header {
@@ -59,18 +60,12 @@
         position: absolute;
         top: 0;
         z-index: 50;
-
-        @media only screen and (max-width: $bp-medium) {
-            // display: none;
-        }
         
     }
 
     &__menu {
         top: 0;
-        position: absolute;
         width: 100%;
-        position: relative;
         display: flex;
         justify-content: space-between;
         color: $color-blue-2;
@@ -79,10 +74,15 @@
         @media only screen and (max-width: $bp-medium) {
             justify-content: flex-start;
         }
+        @media only screen and (max-width: $bp-small) {
+            justify-content: flex-start;
+        }
+
 
         &__container {
             width: 100%;
             display: flex;
+            position: relative;
 
             @media only screen and (max-width: $bp-medium) {
                 flex-direction: column;
@@ -93,13 +93,11 @@
         &__list {
             display: flex;
             list-style: none;
-            padding: 1.5rem 2rem;
+            padding: 1rem 2rem;
             flex: 0 0 33%;
 
             @media only screen and (max-width: $bp-medium) {
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
                 padding: 0 2rem;
                 flex: 0 0 10%;
             }
@@ -128,7 +126,7 @@
                 opacity: .8;
 
                 @media only screen and (max-width: $bp-medium) {
-                    align-self: flex-end;
+                    align-self: center;
                     justify-self: flex-end;
                 }
             }
@@ -139,26 +137,17 @@
                 align-items: center;
                 font-size: 1.5rem;
                 text-transform: uppercase;
-                padding: .5rem;
                 letter-spacing: .5px;
                 position: relative;
                 white-space: nowrap;
 
+                &:hover {
+                    background-color: transparent;
+                }
+
                 @media only screen and (max-width: $bp-medium) {
                     justify-content: space-between;
                     width: 100%;
-                    margin-top: 3rem;
-                }
-            }
-
-            &__hidden {
-                margin-top: 0rem;
-                // padding-top: 2rem;
-
-
-                &-2 {
-                    margin-top: 0rem;
-                    // padding-top: 2rem;
                 }
             }
         }
@@ -181,7 +170,7 @@
     }
 
     &__box {
-        // position: absolute;
+        
         &__img {
             height: 87vh;
 

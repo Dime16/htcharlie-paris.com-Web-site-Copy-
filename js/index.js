@@ -14,6 +14,8 @@ $(document).ready(function(){
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         var cheight = $(".header__box").outerHeight();
+        var concordia = $(".concordia").outerHeight();
+        // var him  = $(".him").outerHeight();
 
         if (scroll > cheight) {
            
@@ -35,7 +37,6 @@ $(document).ready(function(){
         }
     });
     var cheight = $(".header__box").outerHeight();
-    console.log(cheight);
 
 
 //     ---------   DROPDOWN MENU ---------
@@ -375,8 +376,8 @@ $(document).ready(function(){
             {
                 breakpoint: 480, // mobile breakpoint
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]

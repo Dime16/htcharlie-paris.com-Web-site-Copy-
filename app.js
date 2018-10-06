@@ -20,6 +20,18 @@ app.get("/watch", (req, res, next) => {
     res.sendFile(publicPath + "/watch.html");
 });
 
+app.get("/concordia", (req, res, next) => {
+    res.sendFile(publicPath + "/concordia.html");
+});
+
+app.get("/forHim", (req, res, next) => {
+    res.sendFile(publicPath + "/forHim.html");
+});
+
+app.get("/forHer", (req, res, next) => {
+    res.sendFile(publicPath + "/forHer.html");
+});
+
 app.listen(port, () => {
     console.log("Server running on port 3000");
 });

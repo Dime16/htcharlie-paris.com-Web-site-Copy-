@@ -19,7 +19,7 @@ html {
 		padding: 0;
 		border: 0;
 		display: block;
-		
+		transform: translateY(-5.5rem);
     }
 }
 
@@ -103,7 +103,7 @@ nav {
 		padding: 0;
 		
 		li {
-			padding: 20px 5px;
+			padding: 10px 5px;
 			font-size: 2rem;
 			
 			&:hover {
