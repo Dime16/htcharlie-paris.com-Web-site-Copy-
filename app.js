@@ -9,7 +9,7 @@ const publicPath = path.join(__dirname, "/");
 app.use(express.static(publicPath));
 
 app.get("/", (req, res, next) => {
-     res.render('index.html');
+     res.sendFile('index.html');
 });
 
 app.get("/forHim", (req, res, next) => {
