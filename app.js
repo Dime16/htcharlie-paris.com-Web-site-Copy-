@@ -12,10 +12,6 @@ app.get("/", (req, res, next) => {
      res.sendFile('index.html');
 });
 
-app.get("/forHim", (req, res, next) => {
-    res.sendFile(publicPath + "forHim.html");
-});
-
 app.get("/watch", (req, res, next) => {
     res.sendFile(publicPath + "/watch.html");
 });
