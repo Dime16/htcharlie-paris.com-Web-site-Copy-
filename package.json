@@ -17,7 +17,7 @@
     "rebuild-node-sass": "^1.1.0"
   },
   "scripts": {
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "node app.js",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
