@@ -45,9 +45,19 @@ $(document).ready(function(){
 
 
 //     ---------   DROPDOWN MENU ---------
-
+$(".header__menu__list-item").mouseover(function(){
+    
+    if($(".header__menu__list__hidden").hasClass("active")){
+        $(".header__menu__list__hidden").removeClass("active")
+        $(".header__menu__list__hidden").removeClass("active2")
+    }
+});
     $(".header__menu__list-item-one").mouseover(function(){
         $("#hidden").addClass("active2");
+        if($(".header__menu__list__hidden").hasClass("active")){
+            $(".header__menu__list__hidden").removeClass("active")
+            $(".header__menu__list__hidden").removeClass("active2")
+        }
         $(".header__menu__list__hidden").addClass("active");
         $("#toggle").addClass("active3");
         $(".header__menu").css("background-color", "#F6F6F6");
@@ -58,10 +68,11 @@ $(document).ready(function(){
             "justify-self": "center" });
     });
 
-    $(".header__menu__list-item-one").mouseleave(function(){
+    $(".turnOff").mouseover(function(){
         $("#hidden").removeClass("active2");
         $("#toggle").removeClass("active3");
         $(".header__menu__list__hidden").removeClass("active");
+        $(".header__menu__list__hidden").removeClass("active2");
         $(".header__menu").css("background-color", "transparent");
         $(".header__menu__img-logo").attr("src", "/img/logo_web_410x.png")   
         .css({  "height": "10rem",
@@ -81,7 +92,7 @@ $(document).ready(function(){
             "justify-self": "center" });
     });
 
-    $(".header__menu__list-item-two").mouseleave(function(){
+    $(".turnOff").mouseover(function(){
         $("#hidden2").removeClass("active2");
         $("#toggle").removeClass("active3");
         $(".header__menu").css("background-color", "transparent");
@@ -122,7 +133,7 @@ $(document).ready(function(){
             "justify-self": "center" });
     })
 
-    $(".header__menu__list__hidden").mouseleave(function(){
+    $(".turnOff").mouseover(function(){
         $(".header__menu__list__hidden").removeClass("active");
         $(".header__menu").css("background-color", "transparent");
 
@@ -136,7 +147,7 @@ $(document).ready(function(){
     "align-self": "center" });;
     })
 
-    $(".header__menu__list__hidden-2").mouseleave(function(){
+    $(".turnOff").mouseover(function(){
         $(".header__menu__list__hidden-2").removeClass("active");
         $(".header__menu").css("background-color", "transparent");
         
